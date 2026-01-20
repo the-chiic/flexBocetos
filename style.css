@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 800px;
+}
+
+header{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    position: relative;
+
+    div{
+        width: 100%;
+        position: absolute;
+        top: 5px;
+        right: 350px;
+
+        img{
+            width: 25px;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+
+/*Estilo Página 1*/
+
+#nav-pag1{
+    background-color: bisque;
+    height: 150px;
+
+    ul{
+        display: flex;
+        list-style: none;
+
+        li{
+            /*flex-wrap: 1;
+            flex-grow: 1;
+            flex-basis: 150px;*/    /*Es lo mismo que poner flex todo junto*/
+            flex: 1 1 150px;
+            align-content: center;  /*ALinea verticalmente al centro*/
+            height: 75px;
+            text-align: center;
+            background-color: blue;
+            margin-left: 80px;
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        #cajaInicio{
+            padding-left: 50px;
+        }
+
+        #cajaGrande{
+            flex-basis: 180px;
+        }
+    }
+}
+
+/*Estilo Página 2*/
+
+#pag2{
+    width: 850px;   /*Ancho del body de la segunda página más grande*/
+}
+
+#nav-pag2{
+    background-color: bisque;
+    height: 150px;
+
+    ul{
+        display: flex;
+        list-style: none;
+
+        li{
+            /*flex-wrap: 1;
+            flex-grow: 1;
+            flex-basis: 125px;*/    /*Es lo mismo que poner flex todo junto*/
+            flex: 1 1 125px;
+            align-content: center;
+            height: 75px;
+            text-align: center;
+            background-color: blue;
+            margin-left: 80px;
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
